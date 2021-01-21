@@ -21,6 +21,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "typings/assets.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

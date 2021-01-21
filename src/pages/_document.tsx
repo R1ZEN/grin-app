@@ -1,7 +1,8 @@
-import Document from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import sprite from 'svg-sprite-loader/runtime/sprite.build';
 
-class AppDocument extends Document {
+class AppDocument extends Document<{ spriteContent: any }> {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -14,8 +15,10 @@ class AppDocument extends Document {
         });
 
       const initialProps = await Document.getInitialProps(ctx);
+      const spriteContent = sprite.stringify();
       return {
         ...initialProps,
+        spriteContent,
         styles: (
           <>
             {initialProps.styles}
@@ -26,6 +29,19 @@ class AppDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head />
+        <body>
+          <div dangerouslySetInnerHTML={{ __html: this.props.spriteContent }} />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }
 

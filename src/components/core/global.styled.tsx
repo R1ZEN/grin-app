@@ -17,4 +17,23 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  input {
+    border: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
 `
