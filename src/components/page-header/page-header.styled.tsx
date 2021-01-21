@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mixinFont144 } from '../core/mixins/font-mixins';
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -41,6 +42,7 @@ export const SearchClearButton = styled.button`
 `;
 
 export const SearchInput = styled.input`
+  ${mixinFont144};
   width: 100%;
   height: 100%;
   border-radius: .4em;
@@ -57,7 +59,6 @@ export const SearchInput = styled.input`
     visibility: visible;
   }
 `;
-
 
 export const HeaderAuthWrapper = styled.div`
   margin-left: auto;
