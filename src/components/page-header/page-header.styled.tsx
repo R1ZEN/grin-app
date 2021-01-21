@@ -68,10 +68,12 @@ export const HeaderAuthWrapper = styled.div`
 `;
 
 export const HeaderSignInButton = styled.button`
+  ${mixinFont144};
   margin-right: 2.4em;
 `;
 
 export const HeaderSignUpButton = styled.button`
+  ${mixinFont144};
   background: #6554c0;
   border-radius: 50px;
   padding: .8em .8em .8em 1.6em;

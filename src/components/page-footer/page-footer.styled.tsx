@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mixinFont144 } from '../core/mixins/font-mixins';
 
 export const PageFooterWrapper = styled.footer`
   margin-top: auto;
@@ -18,8 +19,7 @@ export const PageFooterInner = styled.div`
 `;
 
 export const PageFooterTitle = styled.strong`
-  font-weight: 400;
-  font-size: 1.4rem;
+  ${mixinFont144};
 `;
 
 export const PageFooterList = styled.ul`
@@ -35,6 +35,6 @@ export const FooterListItem = styled.li`
 `;
 
 export const FooterLink = styled.a`
+  ${mixinFont144};
   color: #6554c0;
-  font-size: 1.4rem;
 `;
