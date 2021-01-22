@@ -11,6 +11,7 @@ import {
   HeaderSignUpButton,
   HeaderWrapper, SearchButton, SearchClearButton, SearchInput,
 } from './page-header.styled';
+import { SvgSimple } from '../core/svg-simple/svg-simple';
 
 export interface IPageHeaderProps {
 }
@@ -22,20 +23,20 @@ export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
     <HeaderWrapper>
 
       <HeaderMenu>
-        <BurgerIcon title='Topic Menu' width='12' />
+        <SvgSimple src={BurgerIcon} title='Topic Menu' width='12' />
       </HeaderMenu>
 
       <HeaderLogoWrapper>
-        <LogoIcon title='Grinfer' width='64' />
+        <SvgSimple src={LogoIcon} title='Grinfer' width='64' />
       </HeaderLogoWrapper>
 
       <HeaderSearch>
         <SearchButton>
-          <InputSearchIcon width='12' fill='currentColor' />
+          <SvgSimple src={InputSearchIcon} width='12' fill='currentColor' />
         </SearchButton>
         <SearchInput type='text' placeholder='Search' />
         <SearchClearButton>
-          <InputCrossIcon width='22' fill='currentColor' />
+          <SvgSimple src={InputCrossIcon} width='22' fill='currentColor' />
         </SearchClearButton>
       </HeaderSearch>
 
@@ -43,7 +44,7 @@ export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
         <HeaderSignInButton>Log In</HeaderSignInButton>
         <HeaderSignUpButton>
           <span>Create Account</span>
-          <CreateAccountIcon width='24' />
+          <SvgSimple src={CreateAccountIcon} width='24' />
         </HeaderSignUpButton>
       </HeaderAuthWrapper>
 

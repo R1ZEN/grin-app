@@ -1,4 +1,4 @@
 declare module "*.svg?sprite" {
-  const content: any;
+  const content: string | import('react').FC;
   export default content;
 }
