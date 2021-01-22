@@ -1,0 +1,14 @@
+{
+  "title": "Business Stories",
+  "description": "Find the latest stories and news on business — from understanding stock trading and writing a marketing plan to launching a successful online business.",
+  "seo": {
+    "title": "Stories about Business - {{date}} | Grinfer.com",
+    "description": "Read stories about Business on Grinfer. Get comprehensive coverage of the latest news and important issues in business-related topics — including ✅finance ✅leading and directing ✅sales, and more."
+  },
+  "about": {
+    "title": "Stories about Business",
+    "content": [
+      "Read stories about Business on Grinfer. Get comprehensive coverage of the latest news and important issues in business-related topics — including finance, leading and directing, sales, and more."
+    ]
+  }
+}

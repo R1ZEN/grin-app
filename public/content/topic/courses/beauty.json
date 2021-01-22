@@ -1,0 +1,15 @@
+{
+  "title": "Beauty Courses",
+  "description": "Deep dive into the world of Beauty creation. Find the ideal class about Hair, Make-up, Cosmetics, Face Yoga, Nail Art, Skincare and Other related topics.",
+  "seo": {
+    "title": "Top Online Beauty Courses & Training - {{date}} | Grinfer.com",
+    "description": "Browse professional Beauty Online Courses from Grinfer. Learn online ✅Nail Art ✅Make-up ✅Skincare & more"
+  },
+  "about": {
+    "title": "More about Beauty Online Courses",
+    "content": [
+      "Turn your passion for beauty into a successful career with beauty online courses on Grinfer. Learn how to competently perform makeup, facial skincare, manicure and pedicure, precision lash and brow treatments, hair styling, and more. Study with comfort and convenience from any place and polish your skills with video tutorials filmed with professional therapists making learning engaging and easy.",
+      "Beauty online courses are great to get a new skill from scratch. It’s also a great option for those who are currently working as a therapist and looking to refresh their knowledge of particular treatments."
+    ]
+  }
+}

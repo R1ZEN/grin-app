@@ -1,0 +1,15 @@
+{
+  "title": "Music Courses",
+  "description": "Take an in-depth look at the music with a collection of courses on Music Fundamentals, Instruments, Vocal, Music Software and Production, and Other music-related subjects.",
+  "seo": {
+    "title": "Top Online Music Courses - {{date}} | Grinfer.com",
+    "description": "Browse top Online Music Courses from Grinfer. Learn online ✅Vocal ✅Instruments ✅Music Fundamentals ✅Music Software & more"
+  },
+  "about": {
+    "title": "More about Music Online Courses",
+    "content": [
+      "Music online courses offer learners a variety of lessons and detailed training on playing musical instruments, sheet music, melody, harmony and music memory, as well as discovering music composers and technology. Study world music online. Discover the aesthetics and history of music. Get a broad overview of the rhythm and develop your listening skills through the study of music.",
+      "By addressing the essentials of music education, composing and production, our music online courses will help you discover the magical world of music creation — whether you are planning to use it as a hobby or for professional purposes."
+    ]
+  }
+}

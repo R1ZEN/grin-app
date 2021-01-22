@@ -1,0 +1,14 @@
+{
+  "title": "Music Stories",
+  "description": "Find the latest stories and news on music — from music history and fundamentals to new drills and learning techniques",
+  "seo": {
+    "title": "Stories about Music - {{date}} | Grinfer.com",
+    "description": "Read stories about Music on Grinfer. Learn about ✅the best practices and ✅result-oriented approaches in any music-related topic — from reading sheet music and composing to drills that make learning how to play instruments fun."
+  },
+  "about": {
+    "title": "Stories about Music",
+    "content": [
+      "Read stories about Music on Grinfer. Learn about the best practices and result-oriented approaches in any music-related topic — from reading sheet music and composing to drills that make learning how to play instruments fun."
+    ]
+  }
+}

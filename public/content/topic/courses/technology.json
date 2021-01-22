@@ -1,0 +1,15 @@
+{
+  "title": "Technology Courses",
+  "description": "Take your career to the next level by learning the most in-demand skills in Technology, Web Development, Mobile Apps, Programming Languages, Game Development, Data Science, Cyber Security, and Other.",
+  "seo": {
+    "title": "Top Technology Courses Online - {{date}} | Grinfer.com",
+    "description": "Browse top online technology courses from Grinfer. Learn online ✅Programming Languages ✅Cyber Security ✅Data Science & more"
+  },
+  "about": {
+    "title": "More about Technology Online Courses",
+    "content": [
+      "Whatever your motivation to start a journey in the tech world, watching comprehensive technology online courses is a fast and efficient way to learn hands-on skills. Learn how to build an app in Swift, create effective online courses on Moodle, design a face recognition system using Python, or deal with automotive electrical wiring.",
+      "Technology online courses offer classes for both beginners and already-in-the-game tech enthusiasts to deepen knowledge in mobile and web development, data science, cybersecurity, and more."
+    ]
+  }
+}

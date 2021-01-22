@@ -1,0 +1,14 @@
+{
+  "title": "Technology Stories",
+  "description": "Find the latest stories and news on technology — from cases about using C++, Java, and Python to real-life examples of machine learning and AI usage.",
+  "seo": {
+    "title": "Stories about Technology - {{date}} | Grinfer.com",
+    "description": "Read stories about Technology on Grinfer. Discover the latest news and best practices on ✅web and mobile development ✅cybersecurity ✅programming languages ✅machine learning ✅game development ✅data science, and more."
+  },
+  "about": {
+    "title": "The most insightful stories about Technology",
+    "content": [
+      "Read stories about Technology on Grinfer. Discover the latest news and best practices on web and mobile development, cybersecurity, programming languages, machine learning, game development, data science, and more."
+    ]
+  }
+}

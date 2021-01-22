@@ -11,7 +11,7 @@ import {
   HeaderSignUpButton,
   HeaderWrapper, SearchButton, SearchClearButton, SearchInput,
 } from './page-header.styled';
-import { SvgSimple } from '../core/svg-simple/svg-simple';
+import { SvgSimple } from '../svg-simple/svg-simple';
 
 export interface IPageHeaderProps {
 }

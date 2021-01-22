@@ -1,0 +1,14 @@
+{
+  "title": "Photography Stories",
+  "description": "Find the latest stories and news on photography — from the importance of light and shadows to understanding the art of landscape photography.",
+  "seo": {
+    "title": "Stories about Photography  - {{date}} | Grinfer.com",
+    "description": "Read stories about Photography on Grinfer. Get comprehensive information and useful tips about  ✅digital photography  ✅tools & software  ✅cinematic drone footage  ✅portrait photography, and more."
+  },
+  "about": {
+    "title": "Stories about Photography",
+    "content": [
+      "Read stories about Photography on Grinfer. Get comprehensive information and useful tips about digital photography, tools & software, cinematic drone footage, portrait photography, and more."
+    ]
+  }
+}

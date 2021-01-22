@@ -1,0 +1,14 @@
+{
+  "title": "Lifestyle Stories",
+  "description": "Find the latest stories and news on lifestyle-related topics — from watercolor painting and playing chess to dog training and cooking.",
+  "seo": {
+    "title": "Stories about Lifestyle - {{date}} | Grinfer.com",
+    "description": "Read stories about Lifestyle on Grinfer. Catch the latest articles on topics such as ✅arts & crafts ✅dancing ✅traveling ✅painting ✅time management ✅cooking, and more."
+  },
+  "about": {
+    "title": "Stories about Lifestyle ",
+    "content": [
+      "Read stories about Lifestyle on Grinfer. Catch the latest articles on topics such as arts & crafts, dancing, traveling, painting, time management, cooking, and more."
+    ]
+  }
+}

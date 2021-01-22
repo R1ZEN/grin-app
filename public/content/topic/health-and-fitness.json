@@ -1,0 +1,22 @@
+{
+  "title": "Health & Fitness",
+  "description": "Learn everything you need to know about Health & Fitness to live your life better. Browse courses in yoga, meditation, health nutrition, training, and more. Book the best trainers for 1-on-1 sessions when you want a personalized approach. Read stories by certified instructors who reveal tips and proven tactics about fitness-related topics.",
+  "seo": {
+    "title": "Health & Fitness | Tutors, Courses & Stories",
+    "description": "Browse courses in yoga, meditation, health nutrition, training ✅Book the best trainers for 1-on-1 sessions ✅Read stories by certified instructors who reveal tips and proven tactics about fitness-related topics."
+  },
+  "faq": [
+    {
+      "title": "Where do you learn about health?",
+      "content": [
+        "You can learn about health and fitness by reading magazines, following popular blogs, watching the latest research, or listening to what certified specialists say. Regardless of what option you choose, make sure to follow different resources. Keep learning and stay fit!"
+      ]
+    },
+    {
+      "title": "What do you learn about in health classes?",
+      "content": [
+        "There are so many things you can learn about health by watching video classes. It all depends on the specific topic. You can learn about mental health, children’s reactions, proper yoga technics, or healthy food prep — you choose the aspect you want to know more about."
+      ]
+    }
+  ]
+}

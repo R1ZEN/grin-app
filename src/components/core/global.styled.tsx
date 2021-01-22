@@ -22,11 +22,16 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 10px;
   }
   
+  body {
+    background: #F4F5F7;
+  }
+  
   button {
     cursor: pointer;
     background: none;
     border: none;
     padding: 0;
+    outline: none;
   }
   
   input {
@@ -35,5 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   
   ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 `

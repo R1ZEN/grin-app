@@ -1,0 +1,28 @@
+{
+  "title": "Technology",
+  "description": "Learn in-demand tech skills to become a confident developer and boost your career. Enroll in courses in app development, machine learning, Python, Java, C++, and many more. Read stories on the latest trends and burning topics in technology. Or find yourself a tutor for 1-on-1 lessons and fast results.",
+  "seo": {
+    "title": "Learn Technology Online  | Tutors, Courses & Stories",
+    "description": "Enroll in courses in app development, machine learning, Python, Java, C++ ✅Read stories on the latest trends and burning topics in technology ✅Find yourself a tutor for 1-on-1 lessons and fast results."
+  },
+  "faq": [
+    {
+      "title": "How to learn information technology?",
+      "content": [
+        "Start with choosing a particular skill you want to learn in information technology. You can find and watch step-by-step videos, or enroll in online courses and do your homework. The main part here is practice. So once you learn something, apply it right away."
+      ]
+    },
+    {
+      "title": "What do you learn in information technology?",
+      "content": [
+        "There are many tech skills to learn. You can choose to build mobile apps in iOS or Android. Learn programming languages like Python, Java, or C++. Become an expert in cybersecurity or machine learning. Or maybe Artificial Intelligence is what you want to dig in deeper. Just select the skill and start learning — tech skills are in high demand."
+      ]
+    },
+    {
+      "title": "Why learn information technology?",
+      "content": [
+        "Information technology, or simply IT, is the fastest growing economic sector that strongly affects all other spheres. Those who learn information technology and have tech-related skills get a well-paid job with social benefits and the ability to work on life-changing projects."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Design Stories",
+  "description": "Find the latest stories and news on design — from drawing and sketching techniques to using 3D tools and designing a mobile app.",
+  "seo": {
+    "title": "Stories about Design - {{date}} | Grinfer.com ",
+    "description": "Read the latest stories and news on design-related topics. Get fascinating insights into ✅web design ✅fashion design ✅interior design ✅3D animation ✅UI/UX, and more."
+  },
+  "about": {
+    "title": "Stories about Design",
+    "content": [
+      "Read the latest stories and news on design-related topics. Get fascinating insights into web design, fashion & interior design, 3D animation, UI/UX, and more."
+    ]
+  }
+}

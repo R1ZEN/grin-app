@@ -1,0 +1,15 @@
+{
+  "title": "Design Courses",
+  "description": "Learn the process of creation by browsing our Design category that includes courses on Interior Design, Fashion Design, 3D Animation, Web Design, and Other topics.",
+  "seo": {
+    "title": "Top Online Design Courses - {{date}} | Grinfer.com",
+    "description": "Browse Top Online Design Courses from Grinfer. Learn Design online with courses like ✅Graphic Design ✅UX design ✅Video game design & more"
+  },
+  "about": {
+    "title": "More about Design Online Courses",
+    "content": [
+      "Design online courses develop practical skills and creative thinking in prototyping, modeling, animation, illustrations, and more, no matter what domain you work in. Learn how to create a website for your business, design a personal logo, or plan your dream home interior.",
+      "Taught by the experts passionate about their subjects, our design online courses can help prepare for in-demand careers, from a fashion designer to a 3D animator. Whether you need to create game characters from scratch or design a storytelling brand book, classes in 3D animation, fashion, web, and interior design provide a variety of skills for designers of all levels and suit for many different tasks."
+    ]
+  }
+}

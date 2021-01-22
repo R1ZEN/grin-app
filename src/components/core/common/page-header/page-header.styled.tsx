@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont144 } from '../core/mixins/font-mixins';
+import { mixinFont144 } from '../../mixins/font-mixins';
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -73,7 +73,6 @@ export const HeaderSignInButton = styled.button`
 `;
 
 export const HeaderSignUpButton = styled.button`
-  ${mixinFont144};
   background: #6554c0;
   border-radius: 50px;
   padding: .8em .8em .8em 1.6em;
@@ -81,8 +80,10 @@ export const HeaderSignUpButton = styled.button`
   display: flex;
   align-items: center;
   transition: opacity ease .3s;
+  max-height: 4rem;
 
   span {
+    ${mixinFont144};
     padding-right: .8em;
   }
 

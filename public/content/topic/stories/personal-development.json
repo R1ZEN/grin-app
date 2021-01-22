@@ -1,0 +1,14 @@
+{
+  "title": "Personal Development Stories",
+  "description": "Find the latest stories and news on topics related to personal development — from proper breathing techniques to learning a go-giver attitude.",
+  "seo": {
+    "title": "Stories about Personal Development - {{date}} | Grinfer.com",
+    "description": "Read stories about Personal Development on Grinfer. Discover articles on  ✅meditation  ✅motivation  ✅productivity  ✅leadership  ✅achieving life goals, and building a better life through improving inner attitude."
+  },
+  "about": {
+    "title": "Stories about Personal Development",
+    "content": [
+      "Read stories about Personal Development on Grinfer. Discover articles on meditation, motivation, productivity, leadership, achieving life goals, and building a better life through improving inner attitude."
+    ]
+  }
+}

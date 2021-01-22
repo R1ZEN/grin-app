@@ -1,0 +1,14 @@
+{
+  "title": "Marketing Stories",
+  "description": "Find the latest stories and news on marketing — from social media and SEO algorithms to launching successful online campaigns.",
+  "seo": {
+    "title": "Stories about Marketing - {{date}} | Grinfer.com",
+    "description": "Read stories about Marketing on Grinfer. Stay informed on the latest trends and techniques used in ✅mobile and digital marketing ✅PR ✅brand awareness ✅advertising, and ✅promotion."
+  },
+  "about": {
+    "title": "Stories about Marketing",
+    "content": [
+      "Read stories about Marketing on Grinfer. Stay informed on the latest trends and techniques used in mobile and digital marketing, PR, brand awareness, advertising, and promotion."
+    ]
+  }
+}

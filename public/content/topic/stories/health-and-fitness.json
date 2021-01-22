@@ -1,0 +1,14 @@
+{
+  "title": "Health & Fitness Stories",
+  "description": "Find the latest stories and news on health & fitness — from healthy nutrition and proper exercise techniques to meditation and workout programs.",
+  "seo": {
+    "title": "Stories about Health & Fitness  - {{date}} | Grinfer.com",
+    "description": "Find the latest stories and news related to health & fitness on Grinfer. Get comprehensive coverage on topics such as  ✅training  ✅yoga  ✅meal preps  ✅workout techniques  ✅meditation, and many more."
+  },
+  "about": {
+    "title": "The most insightful stories about Health & Fitness",
+    "content": [
+      "Find the latest stories and news related to health & fitness on Grinfer. Get comprehensive coverage on topics such as training, yoga, meal preps, workout techniques, meditation, and many more."
+    ]
+  }
+}

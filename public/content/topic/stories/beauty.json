@@ -1,0 +1,14 @@
+{
+  "title": "Beauty Stories",
+  "description": "Find the latest stories and news on beauty-related topics — from haircut ideas and nail art to cosmetics and fashion trends.",
+  "seo": {
+    "title": "Stories about Beauty - {{date}} | Grinfer.com",
+    "description": "Read stories about Beauty on Grinfer. Deepen your understanding of the beauty industry. Get insights into ✅make-up techniques ✅hair styling ✅skincare ✅nail art, and more."
+  },
+  "about": {
+    "title": "Stories about Beauty",
+    "content": [
+      "Read stories about Beauty on Grinfer. Deepen your understanding of the beauty industry. Get insights into make-up techniques, hair styling, skincare, nail art, and more."
+    ]
+  }
+}

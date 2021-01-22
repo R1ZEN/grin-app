@@ -1,18 +1,7 @@
-import { PageHeader } from '../components/page-header/page-header';
-import { PageFooter } from '../components/page-footer/page-footer';
-import styled from 'styled-components';
-
-export const HomeWrapper = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-`
+import { PageLayout } from '../components/core/common/page-layout/page-layout';
 
 export default function Home() {
   return (
-    <HomeWrapper>
-      <PageHeader />
-      <PageFooter />
-    </HomeWrapper>
+    <PageLayout />
   );
 }
