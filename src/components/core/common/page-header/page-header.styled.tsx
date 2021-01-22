@@ -5,6 +5,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e9ebf0;
+  background: #fff;
 `;
 
 export const HeaderMenu = styled.button`

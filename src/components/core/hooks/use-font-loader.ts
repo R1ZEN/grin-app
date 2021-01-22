@@ -1,8 +1,14 @@
 import { useEffect } from 'react';
 import robotoFontFace from 'public/roboto-font-face.json';
 
+let loaded = false;
+
 export const useFontLoader = () => {
   useEffect(() => {
+    if (loaded) {
+      return;
+    }
+
     Promise.all(
       robotoFontFace.map((item) => {
         // @ts-ignore
@@ -18,6 +24,7 @@ export const useFontLoader = () => {
       fonts.map((font) => {
         // @ts-ignore
         document.fonts.add(font);
+        loaded = true;
       });
     });
   }, [])

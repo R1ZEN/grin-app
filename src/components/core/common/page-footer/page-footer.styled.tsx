@@ -4,6 +4,7 @@ import { PageContentContainer } from '../page-content-container/page-content-con
 
 export const PageFooterWrapper = styled.footer`
   border-top: 1px solid #d8d8d8;
+  background: #fff;
 `;
 
 export const PageFooterInner = styled(PageContentContainer)`
