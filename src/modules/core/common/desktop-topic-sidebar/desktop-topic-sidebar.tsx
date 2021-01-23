@@ -13,7 +13,7 @@ import {
   TopicSidebarMask,
   TopicSidebarTitle,
   TopicSidebarWrapper,
-} from './topic-sidebar.styled';
+} from './desktop-topic-sidebar.styled';
 import { Transition } from 'react-transition-group';
 import { useOnClickOutside } from '../../hooks/use-outside-hook';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ const list = [
   },
 ];
 
-export const TopicSidebar: React.FC<IPageSidebarProps> = (props) => {
+export const DesktopTopicSidebar: React.FC<IPageSidebarProps> = (props) => {
   const { visible, onClose } = props;
   const [toggle, setToggle] = useState(false);
   const contentRef = useRef(null);

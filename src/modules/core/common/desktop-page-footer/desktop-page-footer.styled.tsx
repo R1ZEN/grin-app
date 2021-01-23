@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { mixinFont144 } from '../../mixins/font-mixins';
-import { PageContentContainer } from '../page-content-container/page-content-container';
+import { DesktopPageContentContainer } from '../desktop-page-content-container/desktop-page-content-container';
 
 export const PageFooterWrapper = styled.footer`
   border-top: 1px solid #d8d8d8;
   background: #fff;
 `;
 
-export const PageFooterInner = styled(PageContentContainer)`
+export const PageFooterInner = styled(DesktopPageContentContainer)`
   display: flex;
   align-items: center;
   justify-content: space-between;

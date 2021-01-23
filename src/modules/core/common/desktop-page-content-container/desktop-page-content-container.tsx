@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const PageContentContainer = styled.div`
+export const DesktopPageContentContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   max-width: 69.2rem;

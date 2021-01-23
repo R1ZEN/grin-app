@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePage from '../pages/index';
+import HomePage from '../../pages/desktop';
 
 export default {
-  title: 'pages',
+  title: 'pages/desktop',
 };
 
 export const HomePageDefault = () => (

@@ -10,14 +10,14 @@ import {
   HeaderSignInButton,
   HeaderSignUpButton,
   HeaderWrapper, SearchButton, SearchClearButton, SearchInput,
-} from './page-header.styled';
+} from './desktop-page-header.styled';
 import { SvgSimple } from '../svg-simple/svg-simple';
-import { TopicSidebar } from '../topic-sidebar/topic-sidebar';
+import { DesktopTopicSidebar } from '../desktop-topic-sidebar/desktop-topic-sidebar';
 
 export interface IPageHeaderProps {
 }
 
-export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
+export const DesktopPageHeader: React.FC<IPageHeaderProps> = (props) => {
   const {} = props;
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
@@ -55,7 +55,7 @@ export const PageHeader: React.FC<IPageHeaderProps> = (props) => {
         </HeaderAuthWrapper>
       </HeaderWrapper>
 
-      <TopicSidebar visible={sidebarVisible} onClose={() => setSidebarVisible(false)}/>
+      <DesktopTopicSidebar visible={sidebarVisible} onClose={() => setSidebarVisible(false)}/>
     </>
   );
 };

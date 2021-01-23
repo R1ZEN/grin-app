@@ -1,10 +1,10 @@
-import { PageLayout } from '../components/core/common/page-layout/page-layout';
-import { NotFoundView } from '../components/not-found-view/not-found-view';
+import { DesktopPageLayout } from '../modules/core/common/desktop-page-layout/desktop-page-layout';
+import { NotFoundView } from '../modules/core/common/not-found-view/not-found-view';
 
 export default function NotFoundPage() {
   return (
-    <PageLayout>
+    <DesktopPageLayout>
       <NotFoundView />
-    </PageLayout>
+    </DesktopPageLayout>
   );
 }

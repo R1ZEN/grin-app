@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont144 } from '../core/mixins/font-mixins';
+import { mixinFont144 } from '../../mixins/font-mixins';
 
 export const NotFoundArticle = styled.article`
   display: flex;

@@ -1,8 +1,8 @@
 import React from 'react';
-import TopicPage from '../../pages/topic/[topicSlug]';
+import TopicPage from '../../../pages/desktop/topic/[topicSlug]';
 
 export default {
-  title: 'pages/topic',
+  title: 'pages/desktop/topic',
 };
 
 export const TopicPageDefault = () => (

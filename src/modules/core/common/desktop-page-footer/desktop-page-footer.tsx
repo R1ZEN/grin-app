@@ -6,7 +6,7 @@ import {
   PageFooterList,
   PageFooterTitle,
   PageFooterWrapper,
-} from './page-footer.styled';
+} from './desktop-page-footer.styled';
 
 export interface IPageFooterProps {
 }
@@ -34,7 +34,7 @@ const linkList = [
   }
 ]
 
-export const PageFooter: React.FC<IPageFooterProps> = (props) => {
+export const DesktopPageFooter: React.FC<IPageFooterProps> = (props) => {
   const {} = props;
 
   return (
