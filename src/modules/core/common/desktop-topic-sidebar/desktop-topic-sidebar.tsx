@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import CloseIcon from 'public/icons/cross.svg?sprite';
-import ArrowRightIcon from 'public/icons/arrow-right.svg?sprite';
+import CloseIcon from '@static/icons/cross.svg?sprite';
+import ArrowRightIcon from '@static/icons/arrow-right.svg?sprite';
 import { SvgSimple } from '../svg-simple/svg-simple';
 import {
   TopicSidebarBody,

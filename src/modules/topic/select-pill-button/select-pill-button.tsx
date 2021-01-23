@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowRightIcon from 'public/icons/arrow-right.svg?sprite';
+import ArrowRightIcon from '@static/icons/arrow-right.svg?sprite';
 import {
   PillArrowWrapper,
   PillButton,

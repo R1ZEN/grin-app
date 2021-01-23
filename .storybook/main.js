@@ -8,7 +8,8 @@ module.exports = {
   webpackFinal: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      'public': path.resolve(__dirname, '..', 'public'),
+      '@static': path.resolve(__dirname, '..', 'public'),
+      '@modules': path.resolve(__dirname, '..', 'src', 'modules')
     };
 
     return config;

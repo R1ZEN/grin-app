@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import CreateAccountIcon from 'public/icons/create-account-icon.svg?sprite';
-import BurgerIcon from 'public/icons/burger.svg?sprite';
-import LogoIcon from 'public/icons/logo.svg?sprite';
-import InputSearchIcon from 'public/icons/input-search.svg?sprite';
-import InputCrossIcon from 'public/icons/cross.svg?sprite';
+import CreateAccountIcon from '@static/icons/create-account-icon.svg?sprite';
+import BurgerIcon from '@static/icons/burger.svg?sprite';
+import LogoIcon from '@static/icons/logo.svg?sprite';
+import InputSearchIcon from '@static/icons/input-search.svg?sprite';
+import InputCrossIcon from '@static/icons/cross.svg?sprite';
 import {
   HeaderAuthWrapper, HeaderLogoWrapper,
   HeaderMenu, HeaderSearch,
@@ -22,7 +22,7 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
 
   const onToggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
-  }
+  };
 
   return (
     <>
@@ -54,7 +54,8 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
         </HeaderAuthWrapper>
       </HeaderWrapper>
 
-      <DesktopTopicSidebar visible={sidebarVisible} onClose={() => setSidebarVisible(false)}/>
+      <DesktopTopicSidebar visible={sidebarVisible}
+                           onClose={() => setSidebarVisible(false)} />
     </>
   );
 };

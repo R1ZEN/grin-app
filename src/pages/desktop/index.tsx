@@ -1,6 +1,6 @@
-import { DesktopPageLayout } from '../../modules/core/common/desktop-page-layout/desktop-page-layout';
+import { DesktopPageLayout } from '@modules/core/common/desktop-page-layout/desktop-page-layout';
 
-export default function Home() {
+export default function DesktopHome() {
   return (
     <DesktopPageLayout />
   );

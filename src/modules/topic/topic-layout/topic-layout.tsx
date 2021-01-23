@@ -3,9 +3,7 @@ import { TopicFAQ } from '../topic-faq/topic-faq';
 import { TopicDescription, TopicSelectPanelTitle, TopicSelectPanelList, TopicTitle } from './topic-layout.styled';
 import { TopicSelect } from '../topic-select/topic-select';
 
-export interface ITopicLayoutProps {
-
-}
+export interface ITopicLayoutProps {}
 
 export const TopicLayout: React.FC<ITopicLayoutProps> = () => {
   return (
