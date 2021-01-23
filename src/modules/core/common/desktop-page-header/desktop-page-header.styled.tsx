@@ -71,6 +71,10 @@ export const HeaderAuthWrapper = styled.div`
 export const HeaderSignInButton = styled.button`
   ${mixinFont144};
   margin-right: 2.4em;
+  
+  &:hover {
+    color: #6554c0;
+  }
 `;
 
 export const HeaderSignUpButton = styled.button`

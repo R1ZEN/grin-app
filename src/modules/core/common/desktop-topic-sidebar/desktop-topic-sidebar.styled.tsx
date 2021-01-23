@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { mixinFont144, mixinFont167 } from '../../mixins/font-mixins';
 import {
   ENTERED,
-  ENTERING, EXITING,
+  ENTERING, EXITED, EXITING,
   TransitionStatus,
 } from 'react-transition-group/Transition';
 
@@ -10,6 +10,7 @@ export const TopicSidebarWrapper = styled.div<{ state: TransitionStatus }>`
   position: fixed;
   top: 0;
   height: 100%;
+  visibility: ${props => props.state === EXITED ? 'hidden' : 'visible'};
   width: ${props => [ENTERING, ENTERED, EXITING].includes(props.state) ? '100%' : '0'};
 `;
 

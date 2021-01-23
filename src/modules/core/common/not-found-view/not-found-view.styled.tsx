@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont144 } from '../../mixins/font-mixins';
+import { mixinFont144, mixinFont567 } from '../../mixins/font-mixins';
 
 export const NotFoundArticle = styled.article`
   display: flex;
@@ -7,7 +7,9 @@ export const NotFoundArticle = styled.article`
 `;
 
 export const NotFoundTitle = styled.h1`
+  ${mixinFont567};
   font-size: 10.8rem;
+  line-height: 100%;
   color: #e2e4eb;
 `;
 

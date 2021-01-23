@@ -5,8 +5,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   a {
@@ -18,6 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::selection {
+    color: #fff;
+    background: #6554c0;
+  }
+  
   html {
     font-size: 10px;
   }
@@ -26,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     font-feature-settings: "tnum";
     -webkit-font-smoothing: antialiased;
     background: #F4F5F7;
+  }
+
+  figure {
+    margin: 0;
   }
 
   button {
@@ -47,6 +54,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
+    margin: 0;
+  }
+  
+  p {
     margin: 0;
   }
 `;
