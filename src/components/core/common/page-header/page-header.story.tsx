@@ -2,7 +2,7 @@ import React from 'react';
 import { PageHeader } from './page-header';
 
 export default {
-  title: 'Page',
+  title: 'components/core',
 };
 
 export const PageHeaderDefault = () => (

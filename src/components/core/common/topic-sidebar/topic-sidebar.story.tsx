@@ -2,7 +2,7 @@ import React from 'react';
 import { TopicSidebar } from './topic-sidebar';
 
 export default {
-  title: 'Page',
+  title: 'components/core',
 };
 
 export const TopicSidebarDefault = () => {

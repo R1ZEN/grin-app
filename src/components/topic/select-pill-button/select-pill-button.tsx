@@ -4,6 +4,7 @@ import {
   PillArrowWrapper,
   PillButton,
 } from './select-pill-button.styled';
+import { SvgSimple } from '../../core/common/svg-simple/svg-simple';
 
 interface ISelectPillButtonProps {
   title: string;
@@ -18,7 +19,7 @@ export const SelectPillButton: React.FC<ISelectPillButtonProps> = (props) => {
     <PillButton selected={selected}>
       <span>{title}</span>
       <PillArrowWrapper open={visible} selected={selected}>
-        <ArrowRightIcon fill='currentColor' />
+        <SvgSimple src={ArrowRightIcon} fill='currentColor' />
       </PillArrowWrapper>
     </PillButton>
   );
