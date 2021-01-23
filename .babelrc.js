@@ -3,6 +3,6 @@ module.exports = (api) => {
 
   return {
     'presets': ['next/babel'],
-    'plugins': [['styled-components', { 'ssr': true, 'displayName': true }]],
+    'plugins': [['styled-components', { 'ssr': true, 'displayName': false }]],
   };
 };

@@ -1,57 +1,47 @@
 import styled, { css, keyframes } from 'styled-components';
 import { mixinFont144, mixinFont167 } from '../../mixins/font-mixins';
+import {
+  ENTERED,
+  ENTERING, EXITING,
+  TransitionStatus,
+} from 'react-transition-group/Transition';
 
-const sidebarAnimation = keyframes`
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-`
-
-export const TopicSidebarWrapper = styled.div<{ visible: boolean }>`
+export const TopicSidebarWrapper = styled.div<{ state: TransitionStatus }>`
   position: fixed;
   top: 0;
   height: 100%;
-  
-  ${(props) => props.visible ? css`
-    width: 100%;
-  ` : css`
-    width: 0;
-  `}
+  width: ${props => [ENTERING, ENTERED, EXITING].includes(props.state) ? '100%' : '0'};
 `;
 
-export const TopicSidebarMask = styled.div<{ visible: boolean }>`
+export const TopicSidebarMask = styled.div<{ state: TransitionStatus }>`
   position: absolute;
   background: #00000073;
   width: 100%;
   height: 100%;
-  opacity: ${props => props.visible ? '1' : '0'};
-  transition: opacity ease .3s;
+  opacity: ${props => [ENTERING, ENTERED].includes(props.state) ? '1' : '0'};
+  transition: opacity ease .6s;
 `;
 
-export const TopicSidebarContent = styled.div<{ visible: boolean }>`
+export const TopicSidebarContent = styled.div<{ state: TransitionStatus }>`
   position: absolute;
   background: #fff;
   box-shadow: rgb(0 0 0 / 15%) 0 0 8px;
   min-width: 40rem;
   height: 100%;
-  transform: translateX(${(props) => props.visible ? '0' : '-100%'});
-  transition: transform ease .3s;
+  transform: translateX(${(props) => [ENTERING, ENTERED].includes(props.state) ? '0' : '-100%'});
+  transition: transform ease-out .3s;
 `;
 
 export const TopicSidebarHeader = styled.div`
-  padding: 1.75rem 4rem;
+  padding: 1.35rem 4rem;
   border-bottom: 1px solid #e9ebf0;
 `;
 
-export const TopicSidebarBody = styled.div`
-
-`;
+export const TopicSidebarBody = styled.div``;
 
 export const TopicSidebarClose = styled.button`
   color: #637381;
+  padding: .4rem;
 `;
 
 export const TopicSidebarTitle = styled.span`

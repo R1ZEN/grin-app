@@ -12,7 +12,7 @@ import {
   HeaderWrapper, SearchButton, SearchClearButton, SearchInput,
 } from './page-header.styled';
 import { SvgSimple } from '../svg-simple/svg-simple';
-import { TopicSidebar } from '../page-sidebar/topic-sidebar';
+import { TopicSidebar } from '../topic-sidebar/topic-sidebar';
 
 export interface IPageHeaderProps {
 }

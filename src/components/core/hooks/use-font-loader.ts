@@ -1,30 +1,45 @@
-import { useEffect } from 'react';
-import robotoFontFace from 'public/roboto-font-face.json';
+import { useEffect, useRef } from 'react';
 
-let loaded = false;
+interface IRobotoJson {
+  "font-family": string
+  "font-style": string;
+  "font-weight": string;
+  "font-display": string;
+  "src": string;
+  "unicode-range": string;
+}
 
+// Required: @types/css-font-loading-module
 export const useFontLoader = () => {
+  const ref = useRef(false);
+
   useEffect(() => {
-    if (loaded) {
+    if (ref.current) {
       return;
     }
 
-    Promise.all(
-      robotoFontFace.map((item) => {
-        // @ts-ignore
-        const font = new FontFace(item['font-family'], item.src, {
-          style: item['font-style'],
-          weight: item['font-weight'],
-          unicodeRange: item['unicode-range'],
-        });
+    fetch('/roboto-font-face.json')
+      .then((res) => res.json())
+      .then((robotoFontFace: IRobotoJson[]) => {
+        return Promise.all(
+          robotoFontFace.map((item) => {
+            const font = new FontFace(item['font-family'], item.src, {
+              style: item['font-style'],
+              weight: item['font-weight'],
+              unicodeRange: item['unicode-range'],
+            });
 
-        return font.load().then(() => font);
-      }),
-    ).then((fonts) => {
+            return font.load().then(() => font);
+          }),
+        )
+      })
+      .then((fonts) => {
       fonts.map((font) => {
-        // @ts-ignore
         document.fonts.add(font);
-        loaded = true;
+      });
+
+      document.fonts.ready.then(() => {
+        ref.current = true;
       });
     });
   }, [])

@@ -10,7 +10,7 @@ export const useGlobalLinkHandler = () => {
       if (e.currentTarget.tagName === 'A' && e.currentTarget.dataset.client === 'true') {
         e.preventDefault();
         // @ts-ignore
-        router.push(e.target.href, e.target.href, { shallow: true });
+        router.push(e.target.href, undefined, { shallow: true });
       }
     }
 
