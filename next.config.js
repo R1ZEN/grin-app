@@ -1,5 +1,10 @@
 const { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_SERVER } = require('next/constants');
-const { withNextPlugins } = require('./config/with-next-plugins');
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+
+const withNextPlugins = (phase, defaultConfig) => withPlugins([
+  [optimizedImages, {}],
+])(phase, { defaultConfig });
 
 module.exports = (phase, { defaultConfig }) => {
 

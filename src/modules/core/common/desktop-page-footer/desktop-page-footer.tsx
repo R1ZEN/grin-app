@@ -34,9 +34,7 @@ const linkList = [
   }
 ]
 
-export const DesktopPageFooter: React.FC<IPageFooterProps> = (props) => {
-  const {} = props;
-
+export const DesktopPageFooter: React.FC<IPageFooterProps> = () => {
   return (
     <PageFooterWrapper>
       <PageFooterInner>

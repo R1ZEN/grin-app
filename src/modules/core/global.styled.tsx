@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   html,
@@ -17,17 +17,17 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  
+
   html {
     font-size: 10px;
   }
-  
+
   body {
     font-feature-settings: "tnum";
     -webkit-font-smoothing: antialiased;
     background: #F4F5F7;
   }
-  
+
   button {
     cursor: pointer;
     background: none;
@@ -35,11 +35,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     outline: none;
   }
-  
+
   input {
     border: none;
   }
-  
+
   ul {
     list-style-type: none;
     padding: 0;
@@ -49,4 +49,4 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     margin: 0;
   }
-`
+`;

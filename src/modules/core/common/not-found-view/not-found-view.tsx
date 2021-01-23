@@ -7,9 +7,7 @@ import {
 
 export interface INotFoundPageProps {}
 
-export const NotFoundView: React.FC<INotFoundPageProps> = (props) => {
-  const {} = props;
-
+export const NotFoundView: React.FC<INotFoundPageProps> = () => {
   return (
     <NotFoundArticle>
       <NotFoundWrapper>

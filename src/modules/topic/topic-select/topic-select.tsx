@@ -17,9 +17,7 @@ const popoverList = (
   </TopicSelectList>
 )
 
-export const TopicSelect: React.FC<ITopicSelectProps> = (props) => {
-  const {  } = props;
-
+export const TopicSelect: React.FC<ITopicSelectProps> = () => {
   return (
     <PopoverSimple content={popoverList}>
       <SelectPillButton

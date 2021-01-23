@@ -7,9 +7,7 @@ export interface ITopicLayoutProps {
 
 }
 
-export const TopicLayout: React.FC<ITopicLayoutProps> = (props) => {
-  const {} = props;
-
+export const TopicLayout: React.FC<ITopicLayoutProps> = () => {
   return (
     <>
       <TopicTitle>Design</TopicTitle>

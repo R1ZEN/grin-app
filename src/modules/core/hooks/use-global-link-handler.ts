@@ -5,11 +5,9 @@ export const useGlobalLinkHandler = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const handleLink: EventListener = (e) => {
-      // @ts-ignore
+    const handleLink = (e) => {
       if (e.currentTarget.tagName === 'A' && e.currentTarget.dataset.client === 'true') {
         e.preventDefault();
-        // @ts-ignore
         router.push(e.target.href, undefined, { shallow: true });
       }
     }

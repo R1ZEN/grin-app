@@ -17,8 +17,7 @@ import { DesktopTopicSidebar } from '../desktop-topic-sidebar/desktop-topic-side
 export interface IPageHeaderProps {
 }
 
-export const DesktopPageHeader: React.FC<IPageHeaderProps> = (props) => {
-  const {} = props;
+export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const onToggleSidebar = () => {
