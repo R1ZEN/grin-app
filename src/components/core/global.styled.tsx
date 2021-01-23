@@ -23,6 +23,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
+    font-feature-settings: "tnum";
+    -webkit-font-smoothing: antialiased;
     background: #F4F5F7;
   }
   
