@@ -13,13 +13,22 @@ interface ISelectPillButtonProps {
 }
 
 export const SelectPillButton: React.FC<ISelectPillButtonProps> = (props) => {
-  const { title, selected, visible } = props;
+  const {
+ title, selected, visible, 
+} = props;
 
   return (
     <PillButton selected={selected}>
       <span>{title}</span>
-      <PillArrowWrapper open={visible} selected={selected}>
-        <SvgSimple src={ArrowRightIcon} fill='currentColor' />
+
+      <PillArrowWrapper
+        open={visible}
+        selected={selected}
+      >
+        <SvgSimple
+          src={ArrowRightIcon}
+          fill='currentColor'
+        />
       </PillArrowWrapper>
     </PillButton>
   );

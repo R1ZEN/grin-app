@@ -10,12 +10,12 @@ export const useGlobalLinkHandler = () => {
         e.preventDefault();
         router.push(e.target.href, undefined, { shallow: true });
       }
-    }
+    };
 
     document.addEventListener('click', handleLink);
 
     return () => {
       document.removeEventListener('click', handleLink);
-    }
+    };
   }, []);
-}
+};

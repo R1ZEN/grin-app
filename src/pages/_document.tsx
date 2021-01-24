@@ -22,6 +22,7 @@ class AppDocument extends Document<{ spriteContent: string }> {
         styles: (
           <>
             {initialProps.styles}
+
             {sheet.getStyleElement()}
           </>
         ),
@@ -35,9 +36,12 @@ class AppDocument extends Document<{ spriteContent: string }> {
     return (
       <Html>
         <Head />
+
         <body>
           <div dangerouslySetInnerHTML={{ __html: this.props.spriteContent }} />
+
           <Main />
+
           <NextScript />
         </body>
       </Html>

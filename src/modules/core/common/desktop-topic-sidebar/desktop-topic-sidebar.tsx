@@ -50,15 +50,29 @@ export const DesktopTopicSidebar: React.FC<IPageSidebarProps> = (props) => {
   };
 
   return (
-    <Transition in={toggle} timeout={300} onExited={onExited}>
+    <Transition
+      in={toggle}
+      timeout={300}
+      onExited={onExited}
+    >
       {(state) => (
-        <TopicSidebarWrapper data-node='topic-sidebar' state={state}>
+        <TopicSidebarWrapper
+          data-node='topic-sidebar'
+          state={state}
+        >
           <TopicSidebarMask state={state} />
 
-          <TopicSidebarContent state={state} ref={contentRef}>
+          <TopicSidebarContent
+            state={state}
+            ref={contentRef}
+          >
             <TopicSidebarHeader>
               <TopicSidebarClose onClick={onCloseSidebar}>
-                <SvgSimple src={CloseIcon} width='25' fill='currentColor' />
+                <SvgSimple
+                  src={CloseIcon}
+                  width='25'
+                  fill='currentColor'
+                />
               </TopicSidebarClose>
             </TopicSidebarHeader>
 
@@ -69,9 +83,14 @@ export const DesktopTopicSidebar: React.FC<IPageSidebarProps> = (props) => {
                 {list.map(({ title, href }) => {
                   return (
                     <TopicSidebarItem key={title}>
-                      <Link href={href} shallow passHref>
+                      <Link
+                        href={href}
+                        shallow
+                        passHref
+                      >
                         <TopicSidebarLink data-client='true'>
                           <span>{title}</span>
+
                           <SvgSimple
                             src={ArrowRightIcon}
                             width='7'

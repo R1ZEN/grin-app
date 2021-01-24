@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { PopoverContent, PopoverTrigger, PopoverWrapper } from './popover-simple.styled';
+import {
+  PopoverContent,
+  PopoverTrigger,
+  PopoverWrapper,
+} from './popover-simple.styled';
 import { useOnClickOutside } from '../../hooks/use-outside-hook';
 
 export interface IPopoverSimpleProps {
@@ -10,7 +14,9 @@ export interface IPopoverSimpleProps {
 }
 
 export const PopoverSimple: React.FC<IPopoverSimpleProps> = (props) => {
-  const { children, content, visible, onVisibleChange } = props;
+  const {
+    children, content, visible, onVisibleChange,
+  } = props;
   const [localVisible, setLocalVisible] = useState(false);
   const ref = useRef();
   useOnClickOutside(ref, () => setLocalVisible(false));
@@ -22,15 +28,24 @@ export const PopoverSimple: React.FC<IPopoverSimpleProps> = (props) => {
   const onTriggerClick = () => {
     setLocalVisible(!localVisible);
     onVisibleChange && onVisibleChange();
-  }
+  };
 
   return (
-    <PopoverWrapper data-node="popover" ref={ref}>
-      <PopoverTrigger data-node="trigger" onClick={onTriggerClick}>
+    <PopoverWrapper
+      data-node='popover'
+      ref={ref}
+    >
+      <PopoverTrigger
+        data-node='trigger'
+        onClick={onTriggerClick}
+      >
         {children}
       </PopoverTrigger>
 
-      <PopoverContent data-node="content" hidden={!localVisible}>
+      <PopoverContent
+        data-node='content'
+        hidden={!localVisible}
+      >
         {content}
       </PopoverContent>
     </PopoverWrapper>

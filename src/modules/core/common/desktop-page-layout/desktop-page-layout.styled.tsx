@@ -11,4 +11,4 @@ export const PageLayoutWrapper = styled.main`
 
   margin: 0 auto;
   background: #fff;
-`
+`;

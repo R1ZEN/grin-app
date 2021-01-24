@@ -8,9 +8,11 @@ export const DesktopPageLayout: React.FC = ({ children }) => {
   return (
     <PageLayoutWrapper>
       <DesktopPageHeader />
+
       <DesktopPageContentContainer>
         {children}
       </DesktopPageContentContainer>
+
       <DesktopPageFooter />
     </PageLayoutWrapper>
   );

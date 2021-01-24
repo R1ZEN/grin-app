@@ -10,5 +10,10 @@ export interface IAvatarSimpleProps {
 export const AvatarSimple: React.FC<IAvatarSimpleProps> = (props) => {
   const { src, alt } = props;
 
-  return <AvatarImage src={src} alt={alt} />;
+  return (
+    <AvatarImage
+      src={src}
+      alt={alt}
+    />
+);
 };

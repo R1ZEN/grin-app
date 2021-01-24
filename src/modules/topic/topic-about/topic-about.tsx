@@ -10,10 +10,13 @@ interface ITopicAboutProps {
   content: string[];
 }
 
-export const TopicAbout: React.FC<ITopicAboutProps> = ({ title, content }) => {
+export const TopicAbout: React.FC<ITopicAboutProps> = ({
+ title, content, 
+}) => {
   return (
     <TopicAboutArticle>
       <TopicAboutTitle>{title}</TopicAboutTitle>
+
       {content.map((str, index) => {
         return <TopicAboutParagraph key={index}>{str}</TopicAboutParagraph>;
       })}

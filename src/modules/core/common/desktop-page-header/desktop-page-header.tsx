@@ -28,34 +28,62 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
     <>
       <HeaderWrapper>
         <HeaderMenu onClick={onToggleSidebar}>
-          <SvgSimple src={BurgerIcon} title='Topic Menu' width='12' />
+          <SvgSimple
+            src={BurgerIcon}
+            title='Topic Menu'
+            width='12'
+          />
         </HeaderMenu>
 
         <HeaderLogoWrapper>
-          <SvgSimple src={LogoIcon} title='Grinfer' width='64' />
+          <SvgSimple
+            src={LogoIcon}
+            title='Grinfer'
+            width='64'
+          />
         </HeaderLogoWrapper>
 
         <HeaderSearch>
           <SearchButton>
-            <SvgSimple src={InputSearchIcon} width='12' fill='currentColor' />
+            <SvgSimple
+              src={InputSearchIcon}
+              width='12'
+              fill='currentColor'
+            />
           </SearchButton>
-          <SearchInput type='text' placeholder='Search' />
+
+          <SearchInput
+            type='text'
+            placeholder='Search'
+          />
+
           <SearchClearButton>
-            <SvgSimple src={InputCrossIcon} width='22' fill='currentColor' />
+            <SvgSimple
+              src={InputCrossIcon}
+              width='22'
+              fill='currentColor'
+            />
           </SearchClearButton>
         </HeaderSearch>
 
         <HeaderAuthWrapper>
           <HeaderSignInButton>Log In</HeaderSignInButton>
+
           <HeaderSignUpButton>
             <span>Create Account</span>
-            <SvgSimple src={CreateAccountIcon} width='24' />
+
+            <SvgSimple
+              src={CreateAccountIcon}
+              width='24'
+            />
           </HeaderSignUpButton>
         </HeaderAuthWrapper>
       </HeaderWrapper>
 
-      <DesktopTopicSidebar visible={sidebarVisible}
-                           onClose={() => setSidebarVisible(false)} />
+      <DesktopTopicSidebar
+        visible={sidebarVisible}
+        onClose={() => setSidebarVisible(false)}
+      />
     </>
   );
 };

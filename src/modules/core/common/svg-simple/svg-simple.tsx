@@ -6,10 +6,17 @@ export interface ISvgRenderComponentProps {
 }
 
 export const SvgSimple: React.FC<ISvgRenderComponentProps> = (props) => {
-  const { src, ...otherProps } = props;
+  const {
+ src, ...otherProps 
+} = props;
 
   if (typeof src === 'string') {
-    return <img src={src} {...otherProps} />
+    return (
+      <img
+        src={src}
+        {...otherProps}
+      />
+);
   }
 
   const SvgComponent = src;

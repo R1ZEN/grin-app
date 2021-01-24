@@ -6,5 +6,5 @@ export default function DesktopCoursePage() {
     <DesktopPageLayout>
       <DesktopCourseView />
     </DesktopPageLayout>
-  )
+  );
 }

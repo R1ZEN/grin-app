@@ -31,4 +31,4 @@ export const NotFoundLink = styled.a`
 export const NotFoundWrapper = styled.div`
   width: 292px;
   margin: auto auto;
-`
+`;

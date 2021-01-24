@@ -9,13 +9,13 @@ const popoverList = (
   <TopicSelectList>
     {['Design', 'Health and Fitness', 'Technology'].map((title) => {
       return (
-        <TopicSelectItem>
+        <TopicSelectItem key={title}>
           <a href=''>{title}</a>
         </TopicSelectItem>
-      )
+      );
     })}
   </TopicSelectList>
-)
+);
 
 export const TopicSelect: React.FC<ITopicSelectProps> = () => {
   return (

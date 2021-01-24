@@ -131,7 +131,7 @@ export const CourseAuthorBio = styled.p`
   ${mixinFont134};
   color: #637381;
   margin-top: 2.4rem;
-`
+`;
 
 export const DesktopCourseView: React.FC<IDesktopCourseViewProps> = () => {
   return (
@@ -143,6 +143,7 @@ export const DesktopCourseView: React.FC<IDesktopCourseViewProps> = () => {
 
         <CourseViewLanguage>
           <LanguageTitle>Language:</LanguageTitle>
+
           <LanguageValue>English</LanguageValue>
         </CourseViewLanguage>
 
@@ -161,16 +162,23 @@ export const DesktopCourseView: React.FC<IDesktopCourseViewProps> = () => {
           <VolumeList>
             <VolumeItem>
               <VolumeItemTitle>35 minutes</VolumeItemTitle>
-              <VolumeItemDescription>of video/audio
-                content</VolumeItemDescription>
+
+              <VolumeItemDescription>
+                of video/audio content
+              </VolumeItemDescription>
             </VolumeItem>
+
             <VolumeItem>
               <VolumeItemTitle>1</VolumeItemTitle>
-              <VolumeItemDescription>Downloadable
-                attachment</VolumeItemDescription>
+
+              <VolumeItemDescription>
+                Downloadable attachment
+              </VolumeItemDescription>
             </VolumeItem>
+
             <VolumeItem>
               <VolumeItemTitle>1 minute</VolumeItemTitle>
+
               <VolumeItemDescription>of reading content</VolumeItemDescription>
             </VolumeItem>
           </VolumeList>
@@ -186,17 +194,23 @@ export const DesktopCourseView: React.FC<IDesktopCourseViewProps> = () => {
             <figure>
               <AvatarSimple
                 src='https://cdn-start.grinfer.com/api/storage/files/12182c35-6883-4f04-817e-242e295b57b0/preview?size=SMALL&imageType=webp'
-                alt='Jacob Wiles' />
+                alt='Jacob Wiles'
+              />
             </figure>
 
             <CourseAuthorLink href=''>
               <CourseAuthorCreatedBy>Created by</CourseAuthorCreatedBy>
+
               <CourseAuthorName>Jacob Wiles</CourseAuthorName>
             </CourseAuthorLink>
 
             <CourseAuthorShare>
-              <SvgSimple src={ShareIcon} fill='currentColor' width='13'
-                         height='14' />
+              <SvgSimple
+                src={ShareIcon}
+                fill='currentColor'
+                width='13'
+                height='14'
+              />
             </CourseAuthorShare>
           </CourseAuthorWrapper>
 

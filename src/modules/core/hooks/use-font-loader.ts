@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react';
 
 interface IRobotoJson {
-  "font-family": string
-  "font-style": string;
-  "font-weight": string;
-  "font-display": string;
-  "src": string;
-  "unicode-range": string;
+  'font-family': string
+  'font-style': string;
+  'font-weight': string;
+  'font-display': string;
+  'src': string;
+  'unicode-range': string;
 }
 
 // Required: @types/css-font-loading-module
@@ -30,8 +30,8 @@ export const useFontLoader = () => {
             });
 
             return font.load().then(() => font);
-          }),
-        )
+          })
+        );
       })
       .then((fonts) => {
       fonts.map((font) => {
@@ -42,6 +42,6 @@ export const useFontLoader = () => {
         ref.current = true;
       });
     });
-  }, [])
-}
+  }, []);
+};
 

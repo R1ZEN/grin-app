@@ -16,6 +16,7 @@ export const Collapse: React.FC<ICollapseProps> = (props) => {
   return (
     <Details>
       <DetailsSummary>{title}</DetailsSummary>
+
       <DetailsContent>{content}</DetailsContent>
     </Details>
   );

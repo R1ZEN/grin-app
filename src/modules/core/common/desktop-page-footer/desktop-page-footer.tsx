@@ -14,25 +14,25 @@ export interface IPageFooterProps {
 const linkList = [
   {
     title: 'Help',
-    href: ''
+    href: '',
   },
   {
     title: 'Blog',
-    href: ''
+    href: '',
   },
   {
     title: 'Terms of Use',
-    href: ''
+    href: '',
   },
   {
     title: 'Privacy Policy',
-    href: ''
+    href: '',
   },
   {
     title: 'Affiliates',
-    href: ''
-  }
-]
+    href: '',
+  },
+];
 
 export const DesktopPageFooter: React.FC<IPageFooterProps> = () => {
   return (
@@ -43,12 +43,14 @@ export const DesktopPageFooter: React.FC<IPageFooterProps> = () => {
         </PageFooterTitle>
 
         <PageFooterList>
-          {linkList.map(({ title, href }) => {
+          {linkList.map(({
+ title, href, 
+}) => {
             return (
               <FooterListItem key={title}>
                 <FooterLink href={href}>{title}</FooterLink>
               </FooterListItem>
-            )
+            );
           })}
         </PageFooterList>
       </PageFooterInner>

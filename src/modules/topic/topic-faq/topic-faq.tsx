@@ -16,11 +16,14 @@ interface ITopicFAQProps {
 }
 
 export const TopicFAQ: React.FC<ITopicFAQProps> = (props) => {
-  const { list } = props;
+  const {
+    list,
+  } = props;
 
   return (
     <TopicFAQArticle>
       <TopicFAQTitle>Frequently asked questions</TopicFAQTitle>
+
       {list.map(({ title, content }) => {
         return (
           <TopicFAQCollapseWrapper key={title}>
