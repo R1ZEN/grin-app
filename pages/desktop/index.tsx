@@ -1,7 +1,1 @@
-import { DesktopPageLayout } from '@modules/core/common/desktop-page-layout/desktop-page-layout';
-
-export default function DesktopHome() {
-  return (
-    <DesktopPageLayout />
-  );
-}
+export { DesktopHomePage as default } from '@modules/home/desktop-home-page/desktop-home-page';

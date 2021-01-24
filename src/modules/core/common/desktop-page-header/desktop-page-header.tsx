@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CreateAccountIcon from '@static/icons/create-account-icon.svg?sprite';
+import CreateAccountIcon from '../../../../../public/icons/create-account-icon.svg?sprite';
 import BurgerIcon from '@static/icons/burger.svg?sprite';
 import LogoIcon from '@static/icons/logo.svg?sprite';
 import InputSearchIcon from '@static/icons/input-search.svg?sprite';
