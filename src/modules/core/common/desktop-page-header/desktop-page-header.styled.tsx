@@ -2,6 +2,15 @@ import styled from 'styled-components';
 import { mixinFont144 } from '../../mixins/font-mixins';
 
 export const HeaderWrapper = styled.div`
+  padding-top: 64px;
+`;
+
+export const HeaderFixed = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 64px;
+
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e9ebf0;

@@ -5,7 +5,7 @@ import LogoIcon from '@static/icons/logo.svg?sprite';
 import InputSearchIcon from '@static/icons/input-search.svg?sprite';
 import InputCrossIcon from '@static/icons/cross.svg?sprite';
 import {
-  HeaderAuthWrapper, HeaderLogoWrapper,
+  HeaderAuthWrapper, HeaderFixed, HeaderLogoWrapper,
   HeaderMenu, HeaderSearch,
   HeaderSignInButton,
   HeaderSignUpButton,
@@ -25,8 +25,8 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
   };
 
   return (
-    <>
-      <HeaderWrapper>
+    <HeaderWrapper>
+      <HeaderFixed>
         <HeaderMenu onClick={onToggleSidebar}>
           <SvgSimple
             src={BurgerIcon}
@@ -78,12 +78,13 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
             />
           </HeaderSignUpButton>
         </HeaderAuthWrapper>
-      </HeaderWrapper>
+
+      </HeaderFixed>
 
       <DesktopTopicSidebar
         visible={sidebarVisible}
         onClose={() => setSidebarVisible(false)}
       />
-    </>
+    </HeaderWrapper>
   );
 };

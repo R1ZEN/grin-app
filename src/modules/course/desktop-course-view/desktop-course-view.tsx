@@ -82,10 +82,8 @@ export const CourseViewSideblock = styled.aside`
 
 export const CourseViewVideoPlayer = styled.div`
   margin-top: 4rem;
-
   width: 100%;
-  height: 100%;
-  max-height: 37rem;
+  height: 370px;
   background: #f0f1fc;
 `;
 
@@ -93,7 +91,6 @@ export const CourseAuthor = styled.div``;
 export const CourseAuthorWrapper = styled.div`
   display: flex;
 `;
-export const CourseAuthorInfo = styled.div``;
 
 export const CourseAuthorLink = styled.a`
   display: flex;

@@ -43,9 +43,7 @@ export const DesktopPageFooter: React.FC<IPageFooterProps> = () => {
         </PageFooterTitle>
 
         <PageFooterList>
-          {linkList.map(({
- title, href, 
-}) => {
+          {linkList.map(({ title, href }) => {
             return (
               <FooterListItem key={title}>
                 <FooterLink href={href}>{title}</FooterLink>
