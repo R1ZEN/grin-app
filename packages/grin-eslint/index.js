@@ -18,6 +18,7 @@ module.exports = {
     // Core
     'no-console': 'warn',
     'no-debugger': 'error',
+    'no-unused-vars': 'warn',
     'comma-dangle': ['warn', {
       arrays: 'always-multiline',
       objects: 'always-multiline',

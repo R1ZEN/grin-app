@@ -1,10 +1,10 @@
 import React from 'react';
-import ArrowRightIcon from '@static/icons/arrow-right.svg?sprite';
+import ArrowRightIcon from '@static/icons/arrow-right.svg';
 import {
   PillArrowWrapper,
   PillButton,
 } from './select-pill-button.styled';
-import { SvgSimple } from '../../core/common/svg-simple/svg-simple';
+import { SvgSimple } from '../../../core/common/svg-simple/svg-simple';
 
 interface ISelectPillButtonProps {
   title: string;

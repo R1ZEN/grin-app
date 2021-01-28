@@ -9,6 +9,7 @@ export const HeaderFixed = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1440px;
   max-height: 64px;
 
   display: flex;
@@ -18,12 +19,12 @@ export const HeaderFixed = styled.div`
 `;
 
 export const HeaderMenu = styled.button`
-  padding: 2.4rem;
+  padding: 24px;
   border-right: 1px solid #e9ebf0;
 `;
 
-export const HeaderLogoWrapper = styled.button`
-  padding: 0 3.2em 0 2.4em;
+export const HeaderLogoLink = styled.a`
+  padding: 0 32px 0 24px;
 `;
 
 export const HeaderSearch = styled.div`

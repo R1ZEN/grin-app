@@ -17,17 +17,19 @@ import {
 import { Transition } from 'react-transition-group';
 import { useOnClickOutside } from '../../hooks/use-outside-hook';
 import Link from 'next/link';
+import { useRouteHref } from '@modules/core/hooks/use-route-href';
+import { RouteType } from '@routes/routes';
 
 export interface IPageSidebarProps {
   visible: boolean;
-
   onClose?(): void;
 }
 
 const list = [
   {
     title: 'Design',
-    href: '/topic/design',
+    routeType: RouteType.topic,
+    query: { topicSlug: 'design' },
   },
 ];
 
@@ -35,6 +37,7 @@ export const DesktopTopicSidebar: React.FC<IPageSidebarProps> = (props) => {
   const { visible, onClose } = props;
   const [toggle, setToggle] = useState(false);
   const contentRef = useRef(null);
+  const getHref = useRouteHref();
   useOnClickOutside(contentRef, () => setToggle(false));
 
   useEffect(() => {
@@ -80,11 +83,11 @@ export const DesktopTopicSidebar: React.FC<IPageSidebarProps> = (props) => {
               <TopicSidebarTitle>Learn by Topics</TopicSidebarTitle>
 
               <TopicSidebarList>
-                {list.map(({ title, href }) => {
+                {list.map(({ title, routeType, query }) => {
                   return (
                     <TopicSidebarItem key={title}>
                       <Link
-                        href={href}
+                        href={getHref(routeType, query)}
                         shallow
                         passHref
                       >

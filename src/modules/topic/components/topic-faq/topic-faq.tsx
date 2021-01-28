@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse } from '../../core/common/collapse/collapse';
+import { Collapse } from '../../../core/common/collapse/collapse';
 import {
   CollapseContent,
   TopicFAQArticle,

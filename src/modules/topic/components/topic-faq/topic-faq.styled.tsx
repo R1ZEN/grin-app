@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont144, mixinFont247 } from '../../core/mixins/font-mixins';
+import { mixinFont144, mixinFont247 } from '../../../core/mixins/font-mixins';
 
 export const TopicFAQArticle = styled.article`
   padding-top: 40px;

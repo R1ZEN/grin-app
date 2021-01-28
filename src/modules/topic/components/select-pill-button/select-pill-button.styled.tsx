@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont164 } from '../../core/mixins/font-mixins';
+import { mixinFont164 } from '../../../core/mixins/font-mixins';
 
 export const PillArrowWrapper = styled.span<{ open?: boolean; selected?: boolean }>`
   padding-left: 12px;

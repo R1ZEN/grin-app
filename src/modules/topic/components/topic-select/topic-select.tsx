@@ -1,5 +1,5 @@
 import React from 'react';
-import { PopoverSimple } from '../../core/common/popover-simple/popover-simple';
+import { PopoverSimple } from '../../../core/common/popover-simple/popover-simple';
 import { SelectPillButton } from '../select-pill-button/select-pill-button';
 import { TopicSelectItem, TopicSelectList } from './topic-select.styled';
 

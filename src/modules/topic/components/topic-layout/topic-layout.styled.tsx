@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont144, mixinFont407 } from '../../core/mixins/font-mixins';
+import { mixinFont144, mixinFont407 } from '../../../core/mixins/font-mixins';
 
 export const TopicTitle = styled.h1`
   ${mixinFont407};

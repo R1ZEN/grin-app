@@ -1,24 +1,34 @@
 import React, { useState } from 'react';
-import CreateAccountIcon from '../../../../../public/icons/create-account-icon.svg?sprite';
+import CreateAccountIcon from '@static/icons/create-account-icon.svg?sprite';
 import BurgerIcon from '@static/icons/burger.svg?sprite';
 import LogoIcon from '@static/icons/logo.svg?sprite';
 import InputSearchIcon from '@static/icons/input-search.svg?sprite';
 import InputCrossIcon from '@static/icons/cross.svg?sprite';
 import {
-  HeaderAuthWrapper, HeaderFixed, HeaderLogoWrapper,
-  HeaderMenu, HeaderSearch,
+  HeaderAuthWrapper,
+  HeaderFixed,
+  HeaderLogoLink,
+  HeaderMenu,
+  HeaderSearch,
   HeaderSignInButton,
   HeaderSignUpButton,
-  HeaderWrapper, SearchButton, SearchClearButton, SearchInput,
+  HeaderWrapper,
+  SearchButton,
+  SearchClearButton,
+  SearchInput,
 } from './desktop-page-header.styled';
 import { SvgSimple } from '../svg-simple/svg-simple';
 import { DesktopTopicSidebar } from '../desktop-topic-sidebar/desktop-topic-sidebar';
+import Link from 'next/link';
+import { useRouteHref } from '@modules/core/hooks/use-route-href';
+import { RouteType } from '@routes/routes';
 
 export interface IPageHeaderProps {
 }
 
 export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
+  const getHref = useRouteHref();
 
   const onToggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
@@ -35,13 +45,18 @@ export const DesktopPageHeader: React.FC<IPageHeaderProps> = () => {
           />
         </HeaderMenu>
 
-        <HeaderLogoWrapper>
-          <SvgSimple
-            src={LogoIcon}
-            title='Grinfer'
-            width='64'
-          />
-        </HeaderLogoWrapper>
+        <Link
+          href={getHref(RouteType.home)}
+          passHref
+        >
+          <HeaderLogoLink>
+            <SvgSimple
+              src={LogoIcon}
+              title='Grinfer'
+              width='64'
+            />
+          </HeaderLogoLink>
+        </Link>
 
         <HeaderSearch>
           <SearchButton>

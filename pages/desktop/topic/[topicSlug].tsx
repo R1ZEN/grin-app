@@ -1,1 +1,1 @@
-export { DesktopTopicPage as default } from '@modules/topic/desktop-topic-page/desktop-topic-page';
+export { DesktopTopicPage as default } from '@modules/topic/components/desktop-topic-page/desktop-topic-page';

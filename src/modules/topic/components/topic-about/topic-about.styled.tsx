@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mixinFont247 } from '../../core/mixins/font-mixins';
+import { mixinFont247 } from '../../../core/mixins/font-mixins';
 
 export const TopicAboutArticle = styled.article`
   margin-bottom: 56px;

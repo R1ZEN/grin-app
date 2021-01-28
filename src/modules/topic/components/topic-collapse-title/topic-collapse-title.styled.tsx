@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { mixinFont167 } from '../../core/mixins/font-mixins';
+import { mixinFont167 } from '../../../core/mixins/font-mixins';
 
 export const CollapseTitleWrapper = styled.div`
   display: flex;
