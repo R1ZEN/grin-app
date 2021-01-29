@@ -6,6 +6,7 @@ module.exports = {
     'editorconfig',
     'import',
     'react',
+    'jest',
   ],
   'extends': [
     'eslint:recommended',
@@ -13,6 +14,7 @@ module.exports = {
   'env': {
     'browser': true,
     'node': true,
+    'jest/globals': true,
   },
   'rules': {
     // Core
@@ -33,18 +35,18 @@ module.exports = {
 
     // Import (https://github.com/benmosher/eslint-plugin-import)
     'import/no-unassigned-import': 'warn',
-    'import/newline-after-import': ['warn', { 'count': 1 }],
+    'import/newline-after-import': ['warn', {'count': 1}],
     'import/no-duplicates': 'warn',
 
     // React (https://github.com/yannickcr/eslint-plugin-react)
     'react/jsx-indent': ['warn', 2],
     'react/jsx-indent-props': ['warn', 2],
     'react/jsx-first-prop-new-line': 'warn',
-    'react/jsx-max-props-per-line': ['warn', { 'when': 'always' }],
+    'react/jsx-max-props-per-line': ['warn', {'when': 'always'}],
     'react/jsx-newline': 'warn',
     'react/jsx-key': 'error',
     'react/jsx-no-duplicate-props': 'error',
-    'react/jsx-closing-bracket-location': ['warn', { location: 'tag-aligned' }],
+    'react/jsx-closing-bracket-location': ['warn', {location: 'tag-aligned'}],
     'react/jsx-wrap-multilines': ['warn', {
       return: 'parens-new-line',
       arrow: 'parens-new-line',

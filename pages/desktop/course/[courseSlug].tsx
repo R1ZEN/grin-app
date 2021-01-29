@@ -1,1 +1,1 @@
-export { DesktopCoursePage as default } from '@modules/course/desktop-course-page/desktop-course-page';
+export { DesktopCoursePage as default } from '@modules/course/components/desktop-course-page/desktop-course-page';

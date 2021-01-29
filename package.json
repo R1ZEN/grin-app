@@ -10,11 +10,14 @@
     "dev:mobile": "bash scripts/dev.sh mobile",
     "build": "bash scripts/build.sh",
     "start": "bash scripts/start.sh",
-    "lint": "eslint ./src --fix --ext .ts,.tsx",
+    "lint:tsc": "tsc -p ./tsconfig.json",
+    "lint:eslint": "eslint ./src --fix --ext .ts,.tsx",
     "lint:diff": "eslint --fix --ext .ts,.tsx $(git diff --name-only HEAD | xargs)",
     "lint:css": "stylelint './src/**/*.styled.tsx'",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test:unit:ci": "jest --config=jest.config.js --testTimeout=3000 --ci --no-cache",
+    "test:unit:watch": "jest --config=jest.config.js --watch --runInBand --testTimeout=3000"
   },
   "dependencies": {
     "axios": "0.21.1",
